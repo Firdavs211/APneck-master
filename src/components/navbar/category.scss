@@ -1,0 +1,30 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.category__link {
+  text-decoration: none;
+  color: $light_black;
+  font-family: "Maison-Mono";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+.category__link:hover {
+  color: $red;
+  cursor: pointer;
+}
+.active {
+  color: red;
+  border-bottom: none;
+}

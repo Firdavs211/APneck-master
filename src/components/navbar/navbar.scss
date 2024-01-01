@@ -1,0 +1,49 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+nav {
+  background-color: $white;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__ul {
+    display: flex;
+    list-style: none;
+    column-gap: 24px;
+    &__link {
+      text-decoration: none;
+      color: $light_black;
+      padding-bottom: 15px;
+      font-family: "Maison-Mono";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+      text-align: center;
+      transition: 0.3s ease-in;
+    }
+    &__link:hover {
+      border-bottom: 4px solid $black;
+      cursor: pointer;
+    }
+  }
+  &__everlane {
+    width: 30%;
+    border: none !important;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+}
+// .active {
+//   border-bottom: 4px solid $black;
+// }
